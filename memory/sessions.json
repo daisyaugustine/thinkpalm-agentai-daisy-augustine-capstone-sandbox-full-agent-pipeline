@@ -46,119 +46,6 @@
     "validationValid": true
   },
   {
-    "id": "48b9e7ca2ee0f0b03477e2d63178a3f3c9663cd2ba10d68b67e3f9a1573dcffb",
-    "threadId": "thread-1780559445388",
-    "createdAt": "2026-06-04T07:50:49.595Z",
-    "requirement": "Vessel Monitoring System — Product Requirements\n\nProduct: Vessel Monitoring System for fleet operations center.\n\nFeatures required:\n- Real-time voyage tracking from Singapore to Fujairah\n- Fuel monitoring and bunker analytics\n- Crew STCW certification validity dashboard\n- Weather and collision alerts\n- Maintenance schedules and compliance panel\n\nVessel Name: MV ThinkPalm Aurora\nVoyage Stage: Singapore to Fujairah",
-    "productName": "Vessel Monitoring System",
-    "features": [
-      "Real-time Voyage Tracking",
-      "Fuel Monitoring And Bunker Analytics",
-      "Crew STCW Certification Validity Dashboard",
-      "Weather And Collision Alerts",
-      "Maintenance Schedules And Compliance Panel"
-    ],
-    "componentHierarchy": {
-      "Dashboard": {
-        "Crew Management": {},
-        "Fuel Monitoring": {},
-        "Maintenance": {},
-        "Vessel Monitoring": {},
-        "Voyage Tracking": {},
-        "Weather Alerts": {}
-      }
-    },
-    "widgetTree": [
-      {
-        "id": "widget-1",
-        "type": "header",
-        "title": "Vessel Monitoring System",
-        "description": "Real-time monitoring and tracking of vessels"
-      },
-      {
-        "id": "widget-2",
-        "type": "section",
-        "title": "Voyage Tracking",
-        "description": "Track vessel voyages in real-time",
-        "children": [
-          {
-            "id": "widget-3",
-            "type": "metric",
-            "title": "Voyage Progress",
-            "description": "Current voyage progress"
-          }
-        ]
-      },
-      {
-        "id": "widget-4",
-        "type": "section",
-        "title": "Fuel Monitoring",
-        "description": "Monitor fuel consumption and bunker analytics",
-        "children": [
-          {
-            "id": "widget-5",
-            "type": "metric",
-            "title": "Fuel Consumption",
-            "description": "Current fuel consumption"
-          }
-        ]
-      },
-      {
-        "id": "widget-6",
-        "type": "section",
-        "title": "Crew Management",
-        "description": "Manage crew STCW certification validity",
-        "children": [
-          {
-            "id": "widget-7",
-            "type": "metric",
-            "title": "Crew Certification",
-            "description": "Crew certification validity"
-          }
-        ]
-      },
-      {
-        "id": "widget-8",
-        "type": "section",
-        "title": "Weather Alerts",
-        "description": "Receive weather and collision alerts",
-        "children": [
-          {
-            "id": "widget-9",
-            "type": "alert",
-            "title": "Weather Alert",
-            "description": "Current weather alert"
-          }
-        ]
-      },
-      {
-        "id": "widget-10",
-        "type": "section",
-        "title": "Maintenance",
-        "description": "View maintenance schedules and compliance panel",
-        "children": [
-          {
-            "id": "widget-11",
-            "type": "metric",
-            "title": "Maintenance Schedule",
-            "description": "Current maintenance schedule"
-          }
-        ]
-      }
-    ],
-    "generatedFiles": {
-      "components/VesselMonitoringSystem.tsx": "import type { ReactNode } from \"react\";\n\nexport interface VesselMonitoringSystemProps {\n  children?: ReactNode;\n}\n\nexport function VesselMonitoringSystem({ children }: VesselMonitoringSystemProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Vessel Monitoring System</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Real-time monitoring and tracking of vessels</p>\n      {children}\n    </section>\n  );\n}\n",
-      "components/VoyageTracking.tsx": "import type { ReactNode } from \"react\";\n\nexport interface VoyageTrackingProps {\n  children?: ReactNode;\n}\n\nexport function VoyageTracking({ children }: VoyageTrackingProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Voyage Tracking</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Track vessel voyages in real-time</p>\n      {children}\n    </section>\n  );\n}\n",
-      "components/FuelMonitoring.tsx": "import type { ReactNode } from \"react\";\n\nexport interface FuelMonitoringProps {\n  children?: ReactNode;\n}\n\nexport function FuelMonitoring({ children }: FuelMonitoringProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Fuel Monitoring</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Monitor fuel consumption and bunker analytics</p>\n      {children}\n    </section>\n  );\n}\n",
-      "components/CrewManagement.tsx": "import type { ReactNode } from \"react\";\n\nexport interface CrewManagementProps {\n  children?: ReactNode;\n}\n\nexport function CrewManagement({ children }: CrewManagementProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Crew Management</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Manage crew STCW certification validity</p>\n      {children}\n    </section>\n  );\n}\n",
-      "components/WeatherAlerts.tsx": "import type { ReactNode } from \"react\";\n\nexport interface WeatherAlertsProps {\n  children?: ReactNode;\n}\n\nexport function WeatherAlerts({ children }: WeatherAlertsProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Weather Alerts</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Receive weather and collision alerts</p>\n      {children}\n    </section>\n  );\n}\n",
-      "components/Maintenance.tsx": "import type { ReactNode } from \"react\";\n\nexport interface MaintenanceProps {\n  children?: ReactNode;\n}\n\nexport function Maintenance({ children }: MaintenanceProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Maintenance</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">View maintenance schedules and compliance panel</p>\n      {children}\n    </section>\n  );\n}\n",
-      "Dashboard.tsx": "import { VesselMonitoringSystem } from \"./components/VesselMonitoringSystem\";\nimport { VoyageTracking } from \"./components/VoyageTracking\";\nimport { FuelMonitoring } from \"./components/FuelMonitoring\";\nimport { CrewManagement } from \"./components/CrewManagement\";\nimport { WeatherAlerts } from \"./components/WeatherAlerts\";\nimport { Maintenance } from \"./components/Maintenance\";\n\nexport default function Dashboard() {\n  return (\n    <div className=\"min-h-screen bg-slate-950 p-6\">\n      <header className=\"mb-6 border-b border-slate-700 pb-4\">\n        <h1 className=\"text-2xl font-bold text-white\">Maritime Operations Dashboard</h1>\n        <p className=\"text-sm text-slate-400\">Generated by BridgeView AI</p>\n      </header>\n      <div className=\"grid gap-4 md:grid-cols-2 lg:grid-cols-3\">\n      <VesselMonitoringSystem />\n      <VoyageTracking />\n      <FuelMonitoring />\n      <CrewManagement />\n      <WeatherAlerts />\n      <Maintenance />\n      </div>\n    </div>\n  );\n}\n",
-      "App.tsx": "import Dashboard from \"./Dashboard\";\n\nexport default function App() {\n  return <Dashboard />;\n}\n"
-    },
-    "validationValid": true
-  },
-  {
     "id": "4237b298ea235892b7fe21e6ce162784734109984b46305fc3ad90d71240ecae",
     "threadId": "thread-1780559654001",
     "createdAt": "2026-06-04T07:54:17.130Z",
@@ -218,6 +105,115 @@
       "components/WeatherAlerts.tsx": "import type { ReactNode } from \"react\";\n\nexport interface WeatherAlertsProps {\n  children?: ReactNode;\n}\n\nexport function WeatherAlerts({ children }: WeatherAlertsProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-amber-500/50 bg-amber-950/30\">\n      <h3 className=\"text-lg font-semibold text-white\">Weather Alerts</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Critical weather alerts for vessels at sea</p>\n      {children}\n    </section>\n  );\n}\n",
       "components/FuelConsumptionTrends.tsx": "import type { ReactNode } from \"react\";\n\nexport interface FuelConsumptionTrendsProps {\n  children?: ReactNode;\n}\n\nexport function FuelConsumptionTrends({ children }: FuelConsumptionTrendsProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-cyan-500/50 bg-cyan-950/20\">\n      <h3 className=\"text-lg font-semibold text-white\">Fuel Consumption Trends</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Historical fuel consumption analysis for optimized vessel performance</p>\n      {children}\n    </section>\n  );\n}\n",
       "Dashboard.tsx": "import { MaritimeDashboard } from \"./components/MaritimeDashboard\";\nimport { VesselPositions } from \"./components/VesselPositions\";\nimport { EngineHealth } from \"./components/EngineHealth\";\nimport { WeatherAlerts } from \"./components/WeatherAlerts\";\nimport { FuelConsumptionTrends } from \"./components/FuelConsumptionTrends\";\n\nexport default function Dashboard() {\n  return (\n    <div className=\"min-h-screen bg-slate-950 p-6\">\n      <header className=\"mb-6 border-b border-slate-700 pb-4\">\n        <h1 className=\"text-2xl font-bold text-white\">Maritime Operations Dashboard</h1>\n        <p className=\"text-sm text-slate-400\">Generated by BridgeView AI</p>\n      </header>\n      <div className=\"grid gap-4 md:grid-cols-2 lg:grid-cols-3\">\n      <MaritimeDashboard />\n      <VesselPositions />\n      <EngineHealth />\n      <WeatherAlerts />\n      <FuelConsumptionTrends />\n      </div>\n    </div>\n  );\n}\n",
+      "App.tsx": "import Dashboard from \"./Dashboard\";\n\nexport default function App() {\n  return <Dashboard />;\n}\n"
+    },
+    "validationValid": true
+  },
+  {
+    "id": "48b9e7ca2ee0f0b03477e2d63178a3f3c9663cd2ba10d68b67e3f9a1573dcffb",
+    "threadId": "thread-1780570030598",
+    "createdAt": "2026-06-04T10:47:10.636Z",
+    "requirement": "Vessel Monitoring System — Product Requirements\n\nProduct: Vessel Monitoring System for fleet operations center.\n\nFeatures required:\n- Real-time voyage tracking from Singapore to Fujairah\n- Fuel monitoring and bunker analytics\n- Crew STCW certification validity dashboard\n- Weather and collision alerts\n- Maintenance schedules and compliance panel\n\nVessel Name: MV ThinkPalm Aurora\nVoyage Stage: Singapore to Fujairah",
+    "productName": "Vessel Monitoring System",
+    "features": [
+      "voyage tracking",
+      "fuel monitoring",
+      "crew certification",
+      "weather alerts",
+      "maintenance schedules",
+      "fleet overview",
+      "compliance panel",
+      "collision alerts",
+      "bunker analytics"
+    ],
+    "componentHierarchy": {
+      "Dashboard": {
+        "Header": {},
+        "VoyageTrackingCard": {},
+        "FuelMonitoringCard": {},
+        "CrewCertificationCard": {},
+        "WeatherAlertsCard": {},
+        "MaintenanceSchedulesCard": {},
+        "FleetOverviewCard": {},
+        "CompliancePanel": {},
+        "CollisionAlertsCard": {},
+        "BunkerAnalyticsCard": {}
+      }
+    },
+    "widgetTree": [
+      {
+        "id": "widget-1",
+        "type": "header",
+        "title": "Header",
+        "description": "Maritime UI component for Header"
+      },
+      {
+        "id": "widget-2",
+        "type": "card",
+        "title": "VoyageTrackingCard",
+        "description": "Maritime UI component for Voyage Tracking Card"
+      },
+      {
+        "id": "widget-3",
+        "type": "metric",
+        "title": "FuelMonitoringCard",
+        "description": "Maritime UI component for Fuel Monitoring Card"
+      },
+      {
+        "id": "widget-4",
+        "type": "card",
+        "title": "CrewCertificationCard",
+        "description": "Maritime UI component for Crew Certification Card"
+      },
+      {
+        "id": "widget-5",
+        "type": "alert",
+        "title": "WeatherAlertsCard",
+        "description": "Maritime UI component for Weather Alerts Card"
+      },
+      {
+        "id": "widget-6",
+        "type": "table",
+        "title": "MaintenanceSchedulesCard",
+        "description": "Maritime UI component for Maintenance Schedules Card"
+      },
+      {
+        "id": "widget-7",
+        "type": "card",
+        "title": "FleetOverviewCard",
+        "description": "Maritime UI component for Fleet Overview Card"
+      },
+      {
+        "id": "widget-8",
+        "type": "card",
+        "title": "CompliancePanel",
+        "description": "Maritime UI component for Compliance Panel"
+      },
+      {
+        "id": "widget-9",
+        "type": "alert",
+        "title": "CollisionAlertsCard",
+        "description": "Maritime UI component for Collision Alerts Card"
+      },
+      {
+        "id": "widget-10",
+        "type": "card",
+        "title": "BunkerAnalyticsCard",
+        "description": "Maritime UI component for Bunker Analytics Card"
+      }
+    ],
+    "generatedFiles": {
+      "components/Header.tsx": "import type { ReactNode } from \"react\";\n\nexport interface HeaderProps {\n  children?: ReactNode;\n}\n\nexport function Header({ children }: HeaderProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">Header</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Header</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/VoyageTrackingCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface VoyageTrackingCardProps {\n  children?: ReactNode;\n}\n\nexport function VoyageTrackingCard({ children }: VoyageTrackingCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">VoyageTrackingCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Voyage Tracking Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/FuelMonitoringCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface FuelMonitoringCardProps {\n  children?: ReactNode;\n}\n\nexport function FuelMonitoringCard({ children }: FuelMonitoringCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-cyan-500/50 bg-cyan-950/20\">\n      <h3 className=\"text-lg font-semibold text-white\">FuelMonitoringCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Fuel Monitoring Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/CrewCertificationCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface CrewCertificationCardProps {\n  children?: ReactNode;\n}\n\nexport function CrewCertificationCard({ children }: CrewCertificationCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">CrewCertificationCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Crew Certification Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/WeatherAlertsCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface WeatherAlertsCardProps {\n  children?: ReactNode;\n}\n\nexport function WeatherAlertsCard({ children }: WeatherAlertsCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-amber-500/50 bg-amber-950/30\">\n      <h3 className=\"text-lg font-semibold text-white\">WeatherAlertsCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Weather Alerts Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/MaintenanceSchedulesCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface MaintenanceSchedulesCardProps {\n  children?: ReactNode;\n}\n\nexport function MaintenanceSchedulesCard({ children }: MaintenanceSchedulesCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">MaintenanceSchedulesCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Maintenance Schedules Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/FleetOverviewCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface FleetOverviewCardProps {\n  children?: ReactNode;\n}\n\nexport function FleetOverviewCard({ children }: FleetOverviewCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">FleetOverviewCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Fleet Overview Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/CompliancePanel.tsx": "import type { ReactNode } from \"react\";\n\nexport interface CompliancePanelProps {\n  children?: ReactNode;\n}\n\nexport function CompliancePanel({ children }: CompliancePanelProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">CompliancePanel</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Compliance Panel</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/CollisionAlertsCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface CollisionAlertsCardProps {\n  children?: ReactNode;\n}\n\nexport function CollisionAlertsCard({ children }: CollisionAlertsCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-amber-500/50 bg-amber-950/30\">\n      <h3 className=\"text-lg font-semibold text-white\">CollisionAlertsCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Collision Alerts Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "components/BunkerAnalyticsCard.tsx": "import type { ReactNode } from \"react\";\n\nexport interface BunkerAnalyticsCardProps {\n  children?: ReactNode;\n}\n\nexport function BunkerAnalyticsCard({ children }: BunkerAnalyticsCardProps) {\n  return (\n    <section className=\"rounded-xl border p-4 shadow-sm border-slate-700 bg-slate-900/60\">\n      <h3 className=\"text-lg font-semibold text-white\">BunkerAnalyticsCard</h3>\n      <p className=\"mt-2 text-sm text-slate-300\">Maritime UI component for Bunker Analytics Card</p>\n      {children}\n    </section>\n  );\n}\n",
+      "Dashboard.tsx": "import { Header } from \"./components/Header\";\nimport { VoyageTrackingCard } from \"./components/VoyageTrackingCard\";\nimport { FuelMonitoringCard } from \"./components/FuelMonitoringCard\";\nimport { CrewCertificationCard } from \"./components/CrewCertificationCard\";\nimport { WeatherAlertsCard } from \"./components/WeatherAlertsCard\";\nimport { MaintenanceSchedulesCard } from \"./components/MaintenanceSchedulesCard\";\nimport { FleetOverviewCard } from \"./components/FleetOverviewCard\";\nimport { CompliancePanel } from \"./components/CompliancePanel\";\nimport { CollisionAlertsCard } from \"./components/CollisionAlertsCard\";\nimport { BunkerAnalyticsCard } from \"./components/BunkerAnalyticsCard\";\n\nexport default function Dashboard() {\n  return (\n    <div className=\"min-h-screen bg-slate-950 p-6\">\n      <header className=\"mb-6 border-b border-slate-700 pb-4\">\n        <h1 className=\"text-2xl font-bold text-white\">Maritime Operations Dashboard</h1>\n        <p className=\"text-sm text-slate-400\">Generated by BridgeView AI</p>\n      </header>\n      <div className=\"grid gap-4 md:grid-cols-2 lg:grid-cols-3\">\n      <Header />\n      <VoyageTrackingCard />\n      <FuelMonitoringCard />\n      <CrewCertificationCard />\n      <WeatherAlertsCard />\n      <MaintenanceSchedulesCard />\n      <FleetOverviewCard />\n      <CompliancePanel />\n      <CollisionAlertsCard />\n      <BunkerAnalyticsCard />\n      </div>\n    </div>\n  );\n}\n",
       "App.tsx": "import Dashboard from \"./Dashboard\";\n\nexport default function App() {\n  return <Dashboard />;\n}\n"
     },
     "validationValid": true
