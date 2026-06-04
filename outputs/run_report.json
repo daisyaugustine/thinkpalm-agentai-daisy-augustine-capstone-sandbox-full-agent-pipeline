@@ -1,0 +1,153 @@
+{
+  "run_id": "run_20260602_162925",
+  "project_name": "BridgeView AI",
+  "timestamp": "2026-06-02T10:59:25.743467+00:00",
+  "agents": [
+    {
+      "name": "SpecAnalystAgent",
+      "output": {
+        "domains": [
+          "voyage",
+          "fuel",
+          "crew",
+          "alerts",
+          "compliance",
+          "weather"
+        ],
+        "user_stories": [
+          "ThinkPalm needs a modern maritime operations dashboard that can be embedded in a larger product suite",
+          "The UI should support vessel operations managers, crew administrators, and compliance teams",
+          "- Show voyage progress with route timeline, ETA, waypoint completion, and route deviation risk",
+          "- Show crew certification and welfare status with expiring certificate indicators",
+          "- Must feel like an operations command center",
+          "- Should use card-based modular widgets",
+          "- Must support rapid scanning of risk and status"
+        ],
+        "summary": [
+          "# Vessel Monitoring + Crew Welfare Portal Requirements",
+          "ThinkPalm needs a modern maritime operations dashboard that can be embedded in a larger product suite.",
+          "The UI should support vessel operations managers, crew administrators, and compliance teams.",
+          "## Core functional requirements",
+          "- Show voyage progress with route timeline, ETA, waypoint completion, and route deviation risk.",
+          "- Display fuel usage cards with bunker efficiency, daily burn rate, and anomaly flags.",
+          "- Show crew certification and welfare status with expiring certificate indicators.",
+          "- Surface critical alerts for incidents, alarms, and maintenance warnings.",
+          "- Include compliance widgets for IMO and audit-readiness checks.",
+          "- Include weather risk tiles for storm corridor and rough-sea advisories.",
+          "## UX constraints",
+          "- Must feel like an operations command center.",
+          "- Should use card-based modular widgets.",
+          "- Must support rapid scanning of risk and status."
+        ]
+      },
+      "used_tools": [
+        "RequirementParserTool"
+      ]
+    },
+    {
+      "name": "UIArchitectAgent",
+      "output": {
+        "root": "BridgeViewMaritimeDashboard",
+        "sections": [
+          {
+            "name": "Voyage Operations",
+            "widgets": [
+              "VoyageProgressTracker",
+              "WaypointTimeline"
+            ]
+          },
+          {
+            "name": "Fuel Operations",
+            "widgets": [
+              "FuelGaugeCard",
+              "BunkerEfficiencyTile"
+            ]
+          },
+          {
+            "name": "Crew Operations",
+            "widgets": [
+              "CrewCertificationStatus",
+              "CrewWellnessSnapshot"
+            ]
+          },
+          {
+            "name": "Alerts Operations",
+            "widgets": [
+              "AlertPriorityPanel",
+              "IncidentFeed"
+            ]
+          },
+          {
+            "name": "Compliance Operations",
+            "widgets": [
+              "ComplianceChecklist",
+              "AuditReadinessBadge"
+            ]
+          },
+          {
+            "name": "Weather Operations",
+            "widgets": [
+              "WeatherRiskTile",
+              "StormRouteWarning"
+            ]
+          }
+        ],
+        "metadata": {
+          "generated_at": "2026-06-02T10:59:25.731345+00:00",
+          "domains": [
+            "voyage",
+            "fuel",
+            "crew",
+            "alerts",
+            "compliance",
+            "weather"
+          ]
+        }
+      },
+      "used_tools": [
+        "MaritimeWidgetLibraryTool"
+      ]
+    },
+    {
+      "name": "CodeGenAgent",
+      "output": {
+        "preview_path": "outputs\\preview.html",
+        "tree_path": "outputs\\component_tree.json",
+        "exported_files": [
+          "outputs\\generated-next\\components\\Section1VoyageOperations.tsx",
+          "outputs\\generated-next\\components\\Section2FuelOperations.tsx",
+          "outputs\\generated-next\\components\\Section3CrewOperations.tsx",
+          "outputs\\generated-next\\components\\Section4AlertsOperations.tsx",
+          "outputs\\generated-next\\components\\Section5ComplianceOperations.tsx",
+          "outputs\\generated-next\\components\\Section6WeatherOperations.tsx",
+          "outputs\\generated-next\\page.tsx"
+        ]
+      },
+      "used_tools": [
+        "PreviewBuilderTool",
+        "ReactTailwindExporterTool"
+      ]
+    }
+  ],
+  "domains": [
+    "voyage",
+    "fuel",
+    "crew",
+    "alerts",
+    "compliance",
+    "weather"
+  ],
+  "artifacts": {
+    "preview_path": "outputs\\preview.html",
+    "tree_path": "outputs\\component_tree.json",
+    "exported_files": [
+      "outputs\\generated-next\\components\\Section1VoyageOperations.tsx",
+      "outputs\\generated-next\\components\\Section2FuelOperations.tsx",
+      "outputs\\generated-next\\components\\Section3CrewOperations.tsx",
+      "outputs\\generated-next\\components\\Section4AlertsOperations.tsx",
+      "outputs\\generated-next\\components\\Section5ComplianceOperations.tsx",
+      "outputs\\generated-next\\components\\Section6WeatherOperations.tsx",
+      "outputs\\generated-next\\page.tsx"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "root": "BridgeViewMaritimeDashboard",
+  "sections": [
+    {
+      "name": "Voyage Operations",
+      "widgets": [
+        "VoyageProgressTracker",
+        "WaypointTimeline"
+      ]
+    },
+    {
+      "name": "Fuel Operations",
+      "widgets": [
+        "FuelGaugeCard",
+        "BunkerEfficiencyTile"
+      ]
+    },
+    {
+      "name": "Crew Operations",
+      "widgets": [
+        "CrewCertificationStatus",
+        "CrewWellnessSnapshot"
+      ]
+    },
+    {
+      "name": "Compliance Operations",
+      "widgets": [
+        "ComplianceChecklist",
+        "AuditReadinessBadge"
+      ]
+    },
+    {
+      "name": "Weather Operations",
+      "widgets": [
+        "WeatherRiskTile",
+        "StormRouteWarning"
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-06-04T09:12:27.757225+00:00",
+    "domains": [
+      "voyage",
+      "fuel",
+      "crew",
+      "compliance",
+      "weather"
+    ]
+  }
+}

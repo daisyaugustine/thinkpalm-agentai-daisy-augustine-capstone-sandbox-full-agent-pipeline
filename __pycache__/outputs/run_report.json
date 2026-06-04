@@ -1,0 +1,131 @@
+{
+  "run_id": "run_20260604_144227",
+  "project_name": "BridgeView AI",
+  "timestamp": "2026-06-04T09:12:27.770591+00:00",
+  "agents": [
+    {
+      "name": "SpecAnalystAgent",
+      "output": {
+        "domains": [
+          "voyage",
+          "fuel",
+          "crew",
+          "compliance",
+          "weather"
+        ],
+        "user_stories": [
+          "Functional needs:",
+          "- Voyage route progress tracker with ETA updates and waypoint milestones"
+        ],
+        "summary": [
+          "# Vessel Monitoring + Crew Welfare Portal Requirements",
+          "Build a unified operations dashboard for vessel operators, fleet managers, and onboard crew.",
+          "Functional needs:",
+          "- Voyage route progress tracker with ETA updates and waypoint milestones.",
+          "- Fuel consumption and bunker efficiency cards for each active vessel.",
+          "- Crew certification matrix with status for expiring documents.",
+          "- Alert panel for incidents, alarms, and maintenance warnings.",
+          "- IMO compliance readiness checklist for vessel audits.",
+          "- Weather risk strip that highlights storm corridor risk."
+        ]
+      },
+      "used_tools": [
+        "RequirementParserTool"
+      ]
+    },
+    {
+      "name": "UIArchitectAgent",
+      "output": {
+        "root": "BridgeViewMaritimeDashboard",
+        "sections": [
+          {
+            "name": "Voyage Operations",
+            "widgets": [
+              "VoyageProgressTracker",
+              "WaypointTimeline"
+            ]
+          },
+          {
+            "name": "Fuel Operations",
+            "widgets": [
+              "FuelGaugeCard",
+              "BunkerEfficiencyTile"
+            ]
+          },
+          {
+            "name": "Crew Operations",
+            "widgets": [
+              "CrewCertificationStatus",
+              "CrewWellnessSnapshot"
+            ]
+          },
+          {
+            "name": "Compliance Operations",
+            "widgets": [
+              "ComplianceChecklist",
+              "AuditReadinessBadge"
+            ]
+          },
+          {
+            "name": "Weather Operations",
+            "widgets": [
+              "WeatherRiskTile",
+              "StormRouteWarning"
+            ]
+          }
+        ],
+        "metadata": {
+          "generated_at": "2026-06-04T09:12:27.757225+00:00",
+          "domains": [
+            "voyage",
+            "fuel",
+            "crew",
+            "compliance",
+            "weather"
+          ]
+        }
+      },
+      "used_tools": [
+        "MaritimeWidgetLibraryTool"
+      ]
+    },
+    {
+      "name": "CodeGenAgent",
+      "output": {
+        "preview_path": "outputs\\preview.html",
+        "tree_path": "outputs\\component_tree.json",
+        "exported_files": [
+          "outputs\\generated-next\\components\\Section1VoyageOperations.tsx",
+          "outputs\\generated-next\\components\\Section2FuelOperations.tsx",
+          "outputs\\generated-next\\components\\Section3CrewOperations.tsx",
+          "outputs\\generated-next\\components\\Section4ComplianceOperations.tsx",
+          "outputs\\generated-next\\components\\Section5WeatherOperations.tsx",
+          "outputs\\generated-next\\page.tsx"
+        ]
+      },
+      "used_tools": [
+        "PreviewBuilderTool",
+        "ReactTailwindExporterTool"
+      ]
+    }
+  ],
+  "domains": [
+    "voyage",
+    "fuel",
+    "crew",
+    "compliance",
+    "weather"
+  ],
+  "artifacts": {
+    "preview_path": "outputs\\preview.html",
+    "tree_path": "outputs\\component_tree.json",
+    "exported_files": [
+      "outputs\\generated-next\\components\\Section1VoyageOperations.tsx",
+      "outputs\\generated-next\\components\\Section2FuelOperations.tsx",
+      "outputs\\generated-next\\components\\Section3CrewOperations.tsx",
+      "outputs\\generated-next\\components\\Section4ComplianceOperations.tsx",
+      "outputs\\generated-next\\components\\Section5WeatherOperations.tsx",
+      "outputs\\generated-next\\page.tsx"
+    ]
+  }
+}
