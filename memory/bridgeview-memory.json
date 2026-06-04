@@ -1,0 +1,41 @@
+[
+  {
+    "id": "7e21e5d53d2bb06198f59318364e2a4ce8a0d3d874914d14cb6aa19a72772ac4",
+    "createdAt": "2026-06-03T06:20:57.094Z",
+    "specExcerpt": "Build a vessel monitoring dashboard.\nVessel Name: MV ThinkPalm Aurora\nVoyage Stage: Singapore to Fujairah\nInclude fuel analytics, crew STCW validity, weather and collision alerts, ",
+    "summary": "Fallback summary: maritime operations dashboard with voyage, fuel, crew, alerts, and compliance widgets.",
+    "widgets": [
+      "Voyage progress tracker",
+      "Fuel gauge cards",
+      "Crew certification status",
+      "Alert panels",
+      "Weather operations board"
+    ]
+  },
+  {
+    "id": "2efddf3f592188217364b813ef1c493da7210362cf6cf0243d9658d4c0f549f7",
+    "createdAt": "2026-06-02T12:20:14.810Z",
+    "specExcerpt": "Need vessel dashboard with fuel and alerts",
+    "summary": "Fallback summary: maritime operations dashboard with voyage, fuel, crew, alerts, and compliance widgets.",
+    "widgets": [
+      "Voyage progress tracker",
+      "Fuel gauge cards",
+      "Crew certification status",
+      "Alert panels",
+      "Weather operations board"
+    ]
+  },
+  {
+    "id": "d0b1d94d1ed1860e8079ecf303e3c51bf3275a986b53e382c1477aca7ca925bc",
+    "createdAt": "2026-06-02T11:08:59.828Z",
+    "specExcerpt": "Vessel Name: MV Coral. Voyage Stage: Kochi to Muscat. Need fuel dashboard, crew STCW status, collision alerts, weather panel.",
+    "summary": "Fallback summary: maritime operations dashboard with voyage, fuel, crew, alerts, and compliance widgets.",
+    "widgets": [
+      "Voyage progress tracker",
+      "Fuel gauge cards",
+      "Crew certification status",
+      "Alert panels",
+      "Weather operations board"
+    ]
+  }
+]
